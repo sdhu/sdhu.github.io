@@ -12,58 +12,22 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- Mosaic - sliding boxes -->
-    <link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/mosaic.1.0.1.js"></script>
+    <link rel="stylesheet" href="stylesheets/mosaic.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"> </script>
+    <script type="text/javascript" src="js/mosaic.1.0.1.min.js"></script>
 
     <script type="text/javascript">  
-      
       jQuery(function($){
-        
         $('.circle').mosaic({
           opacity   : 0.8     //Opacity for overlay (0-1)
         });
-        
+
         $('.fade').mosaic();
-        
-        $('.bar').mosaic({
-          animation : 'slide'   //fade or slide
         });
-        
-        $('.bar2').mosaic({
-          animation : 'slide'   //fade or slide
-        });
-        
-        $('.bar3').mosaic({
-          animation : 'slide',  //fade or slide
-          anchor_y  : 'top'   //Vertical anchor position
-        });
-        
-        $('.cover').mosaic({
-          animation : 'slide',  //fade or slide
-          hover_x   : '400px'   //Horizontal position on hover
-        });
-        
-        $('.cover2').mosaic({
-          animation : 'slide',  //fade or slide
-          anchor_y  : 'top',    //Vertical anchor position
-          hover_y   : '80px'    //Vertical position on hover
-        });
-        
-        $('.cover3').mosaic({
-          animation : 'slide',  //fade or slide
-          hover_x   : '400px',  //Horizontal position on hover
-          hover_y   : '300px'   //Vertical position on hover
-        });
-        
-        });
-        
     </script>
-    
+  
     <style type="text/css">
-    
-      /*Demo Styles*/
-      body{ background:#e9e8e4 url('images/bg-grid.png');; }
+      body{}
         #content{ width:845px; margin:20px auto; padding:10px 30px; }
         .clearfix{ display: block; height: 0; clear: both; visibility: hidden; }
             
@@ -84,7 +48,7 @@
         <header class="inner">
 
           <h1 id="project_title">Diana Hu</h1>
-          <h2 id="project_tagline">Exploring the depths through breadth</h2>
+          <h2 id="project_tagline">Data Scientist exploring the depths through breadth</h2>
 
         </header>
     </div>
@@ -104,63 +68,85 @@
   <li> <a href="http://github.com/sdhu"> <i class="fa-li fa fa-github"></i>Github</a> </li>
   </ul>
 </p>
-<h3>
 
+<h3>
 <a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h3>
 
 <div id="content">
+
     <div class="mosaic-block fade">
-      <a2 href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+      <a2 href="" target="_blank" class="mosaic-overlay">
         <div class="details">
-          <h6>Mighty Social Icons</h6>
-          <p>By Build Internet</p>
+          <h7>Collocation of Spanish words</h7>
+          <p2>visualization of bigram occurrences in Spanish Wikipedia</p2>
         </div>
       </a2>
-      <div class="mosaic-backdrop"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/mightyicons.jpg"/></div>
+      <div class="mosaic-backdrop"><img src="images/graph.jpg"/></div>
     </div>
 
-    <div class="mosaic-block cover3">
-      <div class="mosaic-overlay"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/omr-office.jpg"/></div>
-      <a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
-        <div class="details">
-          <h6>One Mighty Roar Office</h6>
-          <p>via Officeal</p>
-        </div>
-      </a>
-    </div>
-    
     <div class="mosaic-block fade">
-      <a2 href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+      <a2 href="http://dx.doi.org/10.1109/IJCB.2011.6117602" target="_blank" class="mosaic-overlay">
         <div class="details">
-          <h6>Mighty Social Icons</h6>
-          <p>By Build Internet</p>
+          <h7>Soft Biometrics</h7>
+          <p2>gender,ethnicity, facial hair, glass detection to improve facial identification</p2>
         </div>
       </a2>
-      <div class="mosaic-backdrop"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/mightyicons.jpg"/></div>
+      <div class="mosaic-backdrop"><img src="images/softbio.jpg"/></div>
     </div>
 
-    <div class="mosaic-block cover3">
-      <div class="mosaic-overlay"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/omr-office.jpg"/></div>
-      <a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+    <div class="mosaic-block fade">
+      <a2 href="http://dx.doi.org/10.1109/ACSSC.2011.6190411" target="_blank" class="mosaic-overlay">
         <div class="details">
-          <h7>One Mighty Roar Office</h7>
-          <p2>via Officeal</p2>
+          <h7>EKG heart signal analysis</h7>
+          <p2>alignment, segmentation and classification</p2>
         </div>
-      </a>
+      </a2>
+      <div class="mosaic-backdrop"><img src="images/ekg.jpg"/></div>
     </div>
 
+    <div class="mosaic-block fade">
+      <a2 href="http://www.cs.cmu.edu/mobot/winners.html" target="_blank" class="mosaic-overlay">
+        <div class="details">
+          <h7>Mobot 17th Race</h7>
+          <p2>autonomous robot race</p2>
+        </div>
+      </a2>
+      <div class="mosaic-backdrop"><img src="images/mobot.jpg"/></div>
+    </div>
 
-    <div class="clearfix"></div>
-  </div>
+    <div class="mosaic-block fade">
+      <a2 href="" target="_blank" class="mosaic-overlay">
+        <div class="details">
+          <h7>Finch Robot</h7>
+          <p2>Sphinx speech processing API</p2>
+        </div>
+      </a2>
+      <div class="mosaic-backdrop"><img src="images/finch.jpg"/></div>
+    </div>
 
+    <div class="mosaic-block fade">
+      <a2 href="" target="_blank" class="mosaic-overlay">
+        <div class="details">
+          <h7>Emotion Detection</h7>
+          <p2>on webcam for real time applications</p2>
+        </div>
+      </a2>
+      <div class="mosaic-backdrop"><img src="images/emotion.jpg"/></div>
+    </div>
 
+<div class="clearfix"></div>
+</div>
 
-<p>(website still work in progress)</p>
+<p>* This site is still work in progress. There are missing links</p>
+
+<h3>
+<a name="music" class="anchor" href="#music"><span class="octicon octicon-link"></span></a>Music</h3>
 
 
 <h3>
+<a name="flow" class="anchor" href="#flow"><span class="octicon octicon-link"></span></a>Flow</h3>
 
-      </section>
+  </section>
     </div>
 
     <!-- FOOTER  -->
