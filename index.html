@@ -8,7 +8,71 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
+    <!-- Icons -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Mosaic - sliding boxes -->
+    <link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/mosaic.1.0.1.js"></script>
+
+    <script type="text/javascript">  
+      
+      jQuery(function($){
+        
+        $('.circle').mosaic({
+          opacity   : 0.8     //Opacity for overlay (0-1)
+        });
+        
+        $('.fade').mosaic();
+        
+        $('.bar').mosaic({
+          animation : 'slide'   //fade or slide
+        });
+        
+        $('.bar2').mosaic({
+          animation : 'slide'   //fade or slide
+        });
+        
+        $('.bar3').mosaic({
+          animation : 'slide',  //fade or slide
+          anchor_y  : 'top'   //Vertical anchor position
+        });
+        
+        $('.cover').mosaic({
+          animation : 'slide',  //fade or slide
+          hover_x   : '400px'   //Horizontal position on hover
+        });
+        
+        $('.cover2').mosaic({
+          animation : 'slide',  //fade or slide
+          anchor_y  : 'top',    //Vertical anchor position
+          hover_y   : '80px'    //Vertical position on hover
+        });
+        
+        $('.cover3').mosaic({
+          animation : 'slide',  //fade or slide
+          hover_x   : '400px',  //Horizontal position on hover
+          hover_y   : '300px'   //Vertical position on hover
+        });
+        
+        });
+        
+    </script>
+    
+    <style type="text/css">
+    
+      /*Demo Styles*/
+      body{ background:#e9e8e4 url('images/bg-grid.png');; }
+        #content{ width:845px; margin:20px auto; padding:10px 30px; }
+        .clearfix{ display: block; height: 0; clear: both; visibility: hidden; }
+            
+        .details{ margin:15px 20px; } 
+          h7{ font:300 16px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+          p2{ font:300 12px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+          a2{ text-decoration:none; }
+    
+    </style>
 
     <title>Diana Hu</title>
   </head>
@@ -20,7 +84,7 @@
         <header class="inner">
 
           <h1 id="project_title">Diana Hu</h1>
-          <h2 id="project_tagline">Exploring the depths through breadth in flow and perception</h2>
+          <h2 id="project_tagline">Exploring the depths through breadth</h2>
 
         </header>
     </div>
@@ -29,16 +93,9 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h3>
 
-
-<p>(website still work in progress)</p>
-
-
-<h3>
 <a name="about-me" class="anchor" href="#about-me"><span class="octicon octicon-link"></span></a>About Me</h3>
-<p> I
-<p>
+<p> I am interested in unveiling the narratives behind the world's complexities from seemingly disconnected data points through technology, creativity and human consciousness. In this process, I am building intelligent systems, while also refactoring how I see the world.</p>
 
   <ul class="fa-ul">
   <li> <a href="DianaHuResume.pdf"> <i class="fa-li fa fa-file-text"></i>Resume</a> </li>
@@ -47,6 +104,62 @@
   <li> <a href="http://github.com/sdhu"> <i class="fa-li fa fa-github"></i>Github</a> </li>
   </ul>
 </p>
+<h3>
+
+<a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h3>
+
+<div id="content">
+    <div class="mosaic-block fade">
+      <a2 href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+        <div class="details">
+          <h6>Mighty Social Icons</h6>
+          <p>By Build Internet</p>
+        </div>
+      </a2>
+      <div class="mosaic-backdrop"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/mightyicons.jpg"/></div>
+    </div>
+
+    <div class="mosaic-block cover3">
+      <div class="mosaic-overlay"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/omr-office.jpg"/></div>
+      <a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+        <div class="details">
+          <h6>One Mighty Roar Office</h6>
+          <p>via Officeal</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="mosaic-block fade">
+      <a2 href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
+        <div class="details">
+          <h6>Mighty Social Icons</h6>
+          <p>By Build Internet</p>
+        </div>
+      </a2>
+      <div class="mosaic-backdrop"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/mightyicons.jpg"/></div>
+    </div>
+
+    <div class="mosaic-block cover3">
+      <div class="mosaic-overlay"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/omr-office.jpg"/></div>
+      <a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+        <div class="details">
+          <h7>One Mighty Roar Office</h7>
+          <p2>via Officeal</p2>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="clearfix"></div>
+  </div>
+
+
+
+<p>(website still work in progress)</p>
+
+
+<h3>
+
       </section>
     </div>
 

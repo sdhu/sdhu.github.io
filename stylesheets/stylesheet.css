@@ -97,6 +97,10 @@ p {
   margin: 10px 0 15px 0;
 }
 
+p2 { font:300 12px 'Lucida Grande', 
+ Tahoma, Verdana, sans-serif;
+ text-shadow:1px 1px 0 rgb(0,0,0);}
+
 footer p {
   color: #f2f2f2;
 }
